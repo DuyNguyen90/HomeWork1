@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0D1F5A72393A70B004045F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F5A62393A70B004045F4 /* ProfileView.swift */; };
+		E0D1F5A92393A718004045F4 /* HotNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F5A82393A718004045F4 /* HotNewsView.swift */; };
+		E0D1F5AD2393B675004045F4 /* NewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F5AC2393B675004045F4 /* NewView.swift */; };
+		E0D1F5B02393BA86004045F4 /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = E0D1F5AF2393BA86004045F4 /* BetterSheet */; };
 		E70F215A23939638007030CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F215923939638007030CE /* AppDelegate.swift */; };
 		E70F215C23939638007030CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F215B23939638007030CE /* SceneDelegate.swift */; };
 		E70F215F23939638007030CE /* HomeWork1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E70F215D23939638007030CE /* HomeWork1.xcdatamodeld */; };
@@ -17,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0D1F5A62393A70B004045F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E0D1F5A82393A718004045F4 /* HotNewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotNewsView.swift; sourceTree = "<group>"; };
+		E0D1F5AC2393B675004045F4 /* NewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewView.swift; sourceTree = "<group>"; };
 		E70F215623939638007030CE /* HomeWork1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70F215923939638007030CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E70F215B23939638007030CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D1F5B02393BA86004045F4 /* BetterSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +69,9 @@
 				E70F215923939638007030CE /* AppDelegate.swift */,
 				E70F215B23939638007030CE /* SceneDelegate.swift */,
 				E70F216023939638007030CE /* ContentView.swift */,
+				E0D1F5A82393A718004045F4 /* HotNewsView.swift */,
+				E0D1F5AC2393B675004045F4 /* NewView.swift */,
+				E0D1F5A62393A70B004045F4 /* ProfileView.swift */,
 				E70F21622393963A007030CE /* Assets.xcassets */,
 				E70F21672393963A007030CE /* LaunchScreen.storyboard */,
 				E70F216A2393963A007030CE /* Info.plist */,
@@ -94,6 +105,9 @@
 			dependencies = (
 			);
 			name = HomeWork1;
+			packageProductDependencies = (
+				E0D1F5AF2393BA86004045F4 /* BetterSheet */,
+			);
 			productName = HomeWork1;
 			productReference = E70F215623939638007030CE /* HomeWork1.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +136,9 @@
 				Base,
 			);
 			mainGroup = E70F214D23939638007030CE;
+			packageReferences = (
+				E0D1F5AE2393BA86004045F4 /* XCRemoteSwiftPackageReference "BetterSheet" */,
+			);
 			productRefGroup = E70F215723939638007030CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70F215A23939638007030CE /* AppDelegate.swift in Sources */,
+				E0D1F5A92393A718004045F4 /* HotNewsView.swift in Sources */,
 				E70F215F23939638007030CE /* HomeWork1.xcdatamodeld in Sources */,
+				E0D1F5A72393A70B004045F4 /* ProfileView.swift in Sources */,
 				E70F216123939638007030CE /* ContentView.swift in Sources */,
+				E0D1F5AD2393B675004045F4 /* NewView.swift in Sources */,
 				E70F215C23939638007030CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0D1F5AE2393BA86004045F4 /* XCRemoteSwiftPackageReference "BetterSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egeniq/BetterSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0D1F5AF2393BA86004045F4 /* BetterSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0D1F5AE2393BA86004045F4 /* XCRemoteSwiftPackageReference "BetterSheet" */;
+			productName = BetterSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E70F215D23939638007030CE /* HomeWork1.xcdatamodeld */ = {
